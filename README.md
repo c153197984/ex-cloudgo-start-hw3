@@ -23,13 +23,13 @@
     > User-Agent: curl/7.47.0
     > Accept: */*
     >
-    < HTTP/1.1 200 OK
-    < Date: Mon, 15 Jan 2018 07:46:56 GMT
-    < Content-Length: 15
-    < Content-Type: text/plain; charset=utf-8
-    <
-    Hello test use!
-    * Connection #0 to host localhost left intact
+    > HTTP/1.1 200 OK
+    > Date: Mon, 15 Jan 2018 07:46:56 GMT
+    > Content-Length: 15
+    > Content-Type: text/plain; charset=utf-8
+    >
+    >Hello test use!
+    >* Connection #0 to host localhost left intact
 
 从上面的结果我们能看出，curl能够收到本地服务器的HTTP响应。
 3. ab测试命令如下：
