@@ -15,20 +15,20 @@
     > [negroni] listening on :8080
 
 2. curl测试命令如下：
-   > $ curl -v http://localhost:8080/test/use
+       $ curl -v http://localhost:8080/foo/bar
     *   Trying ::1...
     * Connected to localhost (::1) port 8080 (#0)
-    > GET /test/use HTTP/1.1
+    > GET /foo/bar HTTP/1.1
     > Host: localhost:8080
     > User-Agent: curl/7.47.0
     > Accept: */*
     >
     < HTTP/1.1 200 OK
-    < Date: Mon, 15 Jan 2018 07:46:56 GMT
+    < Date: Mon, 13 Nov 2017 07:46:56 GMT
     < Content-Length: 15
     < Content-Type: text/plain; charset=utf-8
     <
-    Hello test use!
+    Hello foo bar!
     * Connection #0 to host localhost left intact
 
 从上面的结果我们能看出，curl能够收到本地服务器的HTTP响应。
